@@ -37,7 +37,7 @@ Templates to create Vagrant boxes for Debian 9.5 (amd64).
 
 From the terminal, invoke the following command for VirtualBox provider:
 
-    packer build -only=virtualbox-iso -var-file=debian-9.5.0-amd64-netinst.iso debian-9-amd64-minimal.json
+    packer build -only=virtualbox-iso -var-file=vars-debian-9-amd64-netinst.json debian-9-amd64-minimal.json
 
 You will find a vagrant box file named `Debian-9-amd64-minimal-v9.5.20181111-virtualbox.box`
 in the same directory after the command has succeeded.
@@ -51,7 +51,7 @@ by the following command:
 
 From the terminal, invoke the following command for VMware provider:
 
-    packer build -only=vmware-iso -var-file=debian-9.5.0-amd64-netinst.iso debian-9-amd64-minimal.json
+    packer build -only=vmware-iso -var-file=vars-debian-9-amd64-netinst.json debian-9-amd64-minimal.json
 
 You will find a vagrant box file named `Debian-9-amd64-minimal-v9.5.20181111-vmware.box`
 in the same directory after the command has succeeded.
